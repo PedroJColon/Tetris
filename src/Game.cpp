@@ -10,6 +10,9 @@ void Game::Run()
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
 
+    m_grid.Print();
+
+
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
@@ -38,17 +41,10 @@ void Game::Draw()
     //----------------------------------------------------------------------------------
     BeginDrawing();
 
-    ClearBackground(BLACK);
+    ClearBackground(Colors::blue);
 
-    for (int y = 0; y < m_SCREENHEIGHT; y++)
-    {
-        for (int x = 0; x < m_SCREENWIDTH; x++)
-        {
-            // TODO: Set define size of Cell
-            DrawRectangle(x * 30 + 1, y * 30 + 1, 30 - 1, 30 - 1, DARKBLUE);
-        }
-    }
-
+    m_grid.Draw();
+    jTetromino.Draw();
 
     EndDrawing();
     //----------------------------------------------------------------------------------
