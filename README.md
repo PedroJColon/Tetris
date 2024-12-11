@@ -10,3 +10,9 @@ Because this project uses CMake, specfically Version 3.12, you are able to clone
 - CMake
 - Git/GitHub
 - Visual Studio 2022
+
+## References
+This project was done with the help of three videos:
+- Programming with Nick's Tetris Raylib Video(https://youtu.be/wVYKG_ch4yM)
+- Cherno's Tetris Clone Code Review(https://www.youtube.com/watch?v=U1xIVNZKFh4)
+- Cherno's Stop using std::vector wrong(https://www.youtube.com/watch?v=Xx-NcqmveDc&t=544s)
