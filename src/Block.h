@@ -10,10 +10,14 @@ class Block
 public:
 	Block();
 	void Draw();
-	int m_id;
+	void Move(int rowOffset, int colOffset);
+	std::array<Position, 4> GetCellPositions();
 	std::map<int, std::array<Position, 4>> m_cells;
+	int m_id;
 
 private:
+	int m_rowOffset;
+	int m_colOffset;
 	int m_cellSize;
 	int m_rotationState;
 };
