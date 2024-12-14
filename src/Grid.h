@@ -10,6 +10,7 @@ public:
 	Grid();
 	void Print();
 	void Draw();
+    bool IsCellOutside(int row, int col) const;
 
 	// Member Variables
 	int m_grid[20][10];
@@ -17,7 +18,7 @@ public:
 private:
 	void InitGrid();
 
-	// Member Variables
+    // Member Variables
 	int m_numRows;
 	int m_numCols;
 	int m_cellSize;
